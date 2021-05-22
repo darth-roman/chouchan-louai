@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,600&display=swap');
+
+$primary: #0D3B66;
+$secondary: #ee964b;
+$brand: #F4D35E;
+$dark: #0c0e0e;
+$light: #FAF0CA;
+
+.hidden{
+    display: none;
+}
+
+.socials{
+    display: flex;
+    font-size: 30px;
+
+    a{
+        background: $dark;
+        margin: 10px;
+        padding: 10px;
+        color: $light;
+        border-radius: 100%;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .github:hover{
+        background: $light;
+        color: $dark;
+
+        box-shadow: 0 0 0 4px rgba($light, $alpha: .4);
+    }
+
+    .facebook:hover{
+        background: #4267B2;
+        color: $light;
+        box-shadow: 0 0 0 4px rgba(#4267B2, $alpha: .4);
+    }
+
+    .twitter:hover{
+        background: #1DA1F2;
+        color: $light;
+        box-shadow: 0 0 0 4px rgba(#1DA1F2, $alpha: .4);
+    }
+
+    .instagram:hover{
+        background: linear-gradient(45deg, rgba(#FFDC80,1), rgba(#FD1D1D, .5) 70%),
+                    linear-gradient(160deg, rgba(#405DE6,1), rgba(#FD1D1D, .5) 70%),
+                    linear-gradient(250deg, rgba(#C13584,1), rgba(#FD1D1D, .5) 70%);
+        color: $light;
+        box-shadow: 0 0 0 4px rgba(#C13584, $alpha: .4);
+    }
+
+    .mail:hover{
+        background: #E60023;
+        color: $light;
+        box-shadow: 0 0 0 4px rgba(#E60023, $alpha: .4);
+    }
+}
