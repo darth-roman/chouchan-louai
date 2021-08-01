@@ -1,0 +1,62 @@
+blockquote{
+    color: $light;
+    padding: 16px 20px;
+    margin: 10px;
+    border-left:4px solid $light ;
+
+    background: lightslategrey;
+}
+
+
+.admin-page{
+    color: $light;
+
+}
+
+h1{
+    margin:10px;
+    color: $light;
+}
+
+
+
+
+form{
+    color: $light;
+    margin: 10px;
+    .ql-toolbar{
+        margin: 10px 0;
+    }
+
+    label{
+        margin: 10px 0;
+    }
+
+    input[type="submit"]{
+        margin: 15px 0 ;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: 1px solid $dark;
+        background: $light;
+        box-shadow: transparent;
+        transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        &:hover{
+            background: transparent;
+            border: 1px $light solid;
+            color: $light;
+
+        }
+
+    }
+
+    input[type="text"]{
+        width: calc(100% - 8px);
+        margin: 10px 0 ;
+        padding: 3px;
+        background: $dark;
+        border: 1px solid $light;
+        color: $light;
+    }
+
+}
+    

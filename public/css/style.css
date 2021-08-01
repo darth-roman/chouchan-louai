@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,600&display=swap");
 .hidden {
   display: none;
@@ -47,11 +48,114 @@
   box-shadow: 0 0 0 4px rgba(230, 0, 35, 0.4);
 }
 
+.uc-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.uc-page h1 {
+  color: #FAF0CA;
+}
+
+.theories-page {
+  color: #FAF0CA;
+}
+
+blockquote {
+  color: #FAF0CA;
+  padding: 16px 20px;
+  margin: 10px;
+  border-left: 4px solid #FAF0CA;
+  background: lightslategrey;
+}
+
+.admin-page {
+  color: #FAF0CA;
+}
+
+h1 {
+  margin: 10px;
+  color: #FAF0CA;
+}
+
+form {
+  color: #FAF0CA;
+  margin: 10px;
+}
+form .ql-toolbar {
+  margin: 10px 0;
+}
+form label {
+  margin: 10px 0;
+}
+form input[type=submit] {
+  margin: 15px 0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #0c0e0e;
+  background: #FAF0CA;
+  box-shadow: transparent;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+form input[type=submit]:hover {
+  background: transparent;
+  border: 1px #FAF0CA solid;
+  color: #FAF0CA;
+}
+form input[type=text] {
+  width: calc(100% - 8px);
+  margin: 10px 0;
+  padding: 3px;
+  background: #0c0e0e;
+  border: 1px solid #FAF0CA;
+  color: #FAF0CA;
+}
+
+.my-projects-body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FAF0CA;
+  overflow-x: hidden;
+}
+.my-projects-body .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-projects-body .content .project-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: #1c1f1f;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.my-projects-body .content .project-card .card-img {
+  align-self: center;
+}
+.my-projects-body .content .project-card .card-img img {
+  height: 150px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
 body {
+  background: #0c0e0e;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -87,6 +191,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  border-bottom: #FAF0CA 1px solid;
   background: url(../img/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -94,11 +199,15 @@ body {
   z-index: 0;
 }
 
+.main {
+  height: 100vh;
+}
+
 .site {
   color: #FAF0CA;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 0;
@@ -118,10 +227,74 @@ body {
 }
 .site .intro {
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 .site .intro p {
   line-height: 1.5;
+}
+
+#about {
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  margin-top: 40px;
+  color: #FAF0CA;
+}
+#about h3 {
+  font-size: 30px;
+}
+#about .education ul {
+  list-style-type: "📚 ";
+}
+#about .education p {
+  margin: 0;
+  font-size: 20px;
+}
+#about .education span {
+  font-size: 14px;
+}
+#about .education .educ {
+  margin: 15px 0;
+}
+#about .tech ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: "🟠 ";
+}
+#about .tech ul li {
+  margin: 5px 15px;
+}
+#about .tech .using {
+  margin-left: 30px;
+}
+#about .tech .intrests {
+  margin-left: 30px;
+}
+#about .tech .intrests ul {
+  list-style-type: "🔵 ";
+}
+#about .div {
+  border: 2px #FAF0CA solid;
+  width: 70%;
+  align-self: center;
+}
+#about .activities ul {
+  list-style: "🔴 ";
+  display: flex;
+  flex-wrap: wrap;
+}
+#about .activities ul li {
+  margin: 5px 15px;
+}
+
+@media (min-width: 768px) {
+  .my-projects-body .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

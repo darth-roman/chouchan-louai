@@ -4,6 +4,7 @@ $primary: #0D3B66;
 $secondary: #ee964b;
 $brand: #F4D35E;
 $dark: #0c0e0e;
+$dark-shade: #1c1f1f;
 $light: #FAF0CA;
 
 .hidden{
@@ -13,7 +14,6 @@ $light: #FAF0CA;
 .socials{
     display: flex;
     font-size: 30px;
-
     a{
         background: $dark;
         margin: 10px;
@@ -63,3 +63,4 @@ $light: #FAF0CA;
         box-shadow: 0 0 0 4px rgba(#E60023, $alpha: .4);
     }
 }
+
